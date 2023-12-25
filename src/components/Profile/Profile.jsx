@@ -1,32 +1,33 @@
+import { Avatar, ProfileWrap, Description, Name, Text, StatsList, StatsItem, SpanLabel, SpanQuantity } from "./Profile.styled"
+
 const Profile = ({ username, tag, location, avatar, stats }) => {
     return (
-<div className="profile">
-  <div className="description">
-    <img
+<ProfileWrap>
+  <Description>
+    <Avatar
       src={avatar}
       alt={username}
-      className="avatar"
     />
-    <p className="name">{username}</p>
-    <p className="tag">@{tag}</p>
-    <p className="location">{location}</p>
-  </div>
+    <Name>{username}</Name>
+    <Text>@{tag}</Text>
+    <Text>{location}</Text>
+  </Description>
 
-  <ul className="stats">
-    <li>
-      <span className="label">Followers</span>
-      <span className="quantity">{stats.followers}</span>
-    </li>
-    <li>
-      <span className="label">Views</span>
-      <span className="quantity">{stats.views}</span>
-    </li>
-    <li>
-      <span className="label">Likes</span>
-      <span className="quantity">{stats.likes}</span>
-    </li>
-  </ul>
-</div>
+  <StatsList>
+    <StatsItem>
+      <SpanLabel>Followers</SpanLabel>
+      <SpanQuantity>{stats.followers}</SpanQuantity>
+    </StatsItem>
+    <StatsItem>
+      <SpanLabel>Views</SpanLabel>
+      <SpanQuantity>{stats.views}</SpanQuantity>
+    </StatsItem>
+    <StatsItem>
+      <SpanLabel>Likes</SpanLabel>
+      <SpanQuantity>{stats.likes}</SpanQuantity>
+    </StatsItem>
+  </StatsList>
+</ProfileWrap>
     )
 }
 
