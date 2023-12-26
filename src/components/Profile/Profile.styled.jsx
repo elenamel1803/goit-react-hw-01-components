@@ -52,12 +52,12 @@ export const StatsItem= styled.li`
     align-items: center;  
     padding: 10px;
     border-top: 1px solid #c5c5c7;
-      :not(:last-child) {
-            border-right: 1px solid #c5c5c7;
-                                            }
-      :not(:last-child) span {
-            border-right: none;
-                                }
+        :not(:last-child) {
+                border-right: 1px solid #c5c5c7;
+                                                }
+        :not(:last-child) span {
+                border-right: none;
+                                    }
 `
 export const SpanLabel = styled.span`
     display: flex;
