@@ -27,7 +27,7 @@ export const TableData = styled.td`
     } 
 `
 export const TableRow = styled.tr`
-    &:nth-child(even) {
+    &:nth-of-type(even) {
     background-color: #eeeaea;
 }
 `

@@ -34,11 +34,11 @@ export const StatItem = styled.li`
     align-items: center;  
     padding: 10px;
 
-    &:first-child{
+    &:first-of-type{
         border-bottom-left-radius: 10px;
     }
 
-    &:last-child {    
+    &:first-of-type {    
         border-bottom-right-radius: 10px;
     }
 `
