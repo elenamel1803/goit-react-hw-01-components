@@ -8,7 +8,8 @@ export const StatSection = styled.section`
 export const Title = styled.h2`
   margin: 0 auto 0;
   padding: 30px 0;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   background-color: #fff;
   text-align: center;
   justify-content: center;
@@ -18,7 +19,8 @@ export const Title = styled.h2`
   border-top-right-radius: 10px;
 `;
 export const StatList = styled.ul`
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   display: flex;
   margin: 0 auto 0;
   padding: 0;
@@ -38,7 +40,7 @@ export const StatItem = styled.li`
     border-bottom-left-radius: 10px;
   }
 
-  &:first-of-type {
+  &:last-of-type {
     border-bottom-right-radius: 10px;
   }
 `;

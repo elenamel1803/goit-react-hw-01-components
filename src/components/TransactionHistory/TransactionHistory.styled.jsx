@@ -5,7 +5,8 @@ export const TableTransactionHistory = styled.table`
   table-layout: auto;
   border: 1px solid #c5c5c7;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   margin: 30px auto;
 `;
 export const TableHead = styled.th`

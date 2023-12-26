@@ -8,7 +8,8 @@ export const Description = styled.div`
   background-color: #ffffff;
   padding: 30px 0;
   margin: 0 auto;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   justify-content: center;
   text-align: center;
   border-top-left-radius: 10px;
@@ -36,7 +37,8 @@ export const Text = styled.p`
 `;
 export const StatsList = styled.ul`
   background-color: #f8eeee;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   display: flex;
   margin: 0 auto;
   padding: 0;
